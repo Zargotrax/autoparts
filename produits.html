@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fournisseurs</title>
+    <link rel="stylesheet" type="text/css" href="styles/appstyles.css">
+    <script src="js/axios.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+            <img src="https://media.licdn.com/dms/image/C4E0BAQF0lgCgOff8KA/company-logo_200_200/0?e=2159024400&v=beta&t=2MV_LDPvwCsC2ImTcEje1SRIn_KFyxK1egSQG26wmhU" >
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="produits.html">
+                Produits
+            </a>
+
+            <a class="navbar-item" href="fournisseurs.html">
+                Fournisseurs
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        There
+                    </a>
+                    <a class="navbar-item">
+                        Is
+                    </a>
+                    <a class="navbar-item">
+                        Nothing
+                    </a>
+                    <a class="navbar-item">
+                        Here
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <h1 class="title is-1">
+            Liste des produits
+            <button class="button is-success action-create">
+                Ajouter un produit
+            </button>
+        </h1>
+
+        <div id="app"></div>
+    </div>
+</section>
+
+</body>
+<script>
+    ready(initProductList);
+</script>
+</html>

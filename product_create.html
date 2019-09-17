@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="styles/appstyles.css">
+    <script src="js/axios.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+            <img src="https://media.licdn.com/dms/image/C4E0BAQF0lgCgOff8KA/company-logo_200_200/0?e=2159024400&v=beta&t=2MV_LDPvwCsC2ImTcEje1SRIn_KFyxK1egSQG26wmhU" >
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="produits.html">
+                Produits
+            </a>
+
+            <a class="navbar-item" href="fournisseurs.html">
+                Fournisseurs
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        There
+                    </a>
+                    <a class="navbar-item">
+                        Is
+                    </a>
+                    <a class="navbar-item">
+                        Nothing
+                    </a>
+                    <a class="navbar-item">
+                        Here
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="section">
+    <div class="container">
+        <h1 class="title is-1">
+            Ajout d'un produit
+        </h1>
+
+        <div class="field">
+            <label class="label">Nom du produit</label>
+            <div class="control">
+                <input name="title" class="input" type="text" placeholder="Entrez le nom du produit">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Numéro de model</label>
+            <div class="control">
+                <input name="modelNB" class="input" type="text" placeholder="Entrez le numéro de model">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Numéro de code</label>
+            <div class="control">
+                <input name="code" class="input" type="text" placeholder="Entrez le code du model">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Prix unitaire du produit</label>
+            <div class="control">
+                <input name="unitPrice" class="input" type="text" placeholder="Entrez le prix unitaire">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Inventaire</label>
+            <div class="control">
+                <input name="nb" class="input" type="text" placeholder="Nombre en inventaire">
+            </div>
+        </div>
+
+        <button class="button is-success action-do-create">
+            Sauvegarder
+        </button>
+
+        <button class="button action-go-back">
+            Annuler
+        </button>
+    </div>
+</section>
+</body>
+<script>ready(initProductCreateForm)</script>
+</html>
